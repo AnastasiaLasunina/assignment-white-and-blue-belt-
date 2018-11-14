@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 13 13:07:19 2018
+
+@author: Anastasia
+"""
+
+#%% Ex. 1 create a more accurate version of calculate_volume_cilinder and calculate_volume_sphere 
+## that gets the pi constant from the math module
+
+#%%
+def calculate_volume_cylinder (radius, height):
+    import math 
+    return float(height) * (float(radius)** 2) * math.pi
+
+
+#%%
+def calculate_volume_sphere (radius):
+    import math
+    return (float(radius)**3) * math.pi * (4/3)
+
+
+#%% Ex. 2 Investigate how to create histograms using the matplotlib library.  
+##Create a function that uses the matplotlib library to plot the histogram 
+##of the grade distribution in an imaginary IE class with 100 students.  
+## Remember that there are 15% pass, 35% proficiency, 35% excellence, and 15% honors in a class.
+
+import matplotlib.pyplot as plt
+import numpy as np
+#
+#n, bins, patches = plt.hist(x=[15, 35, 35, 15],bins=5, color='blue',
+#                            alpha=5, rwidth=5)
+grades = ["pass", "proficiency", "excellence", "honors"]
+
+#plt.title("Grade distribution")
+#plt.xlabel('Students')
+#plt.ylabel('Grades')
+#plt.show()
+
+plt.bar(grades,[15, 35, 35, 15])
+
+#%% Ex. 3 
+##Create the following packages:
+##- a utils package, containing a functions module.  
+##The functions module should contain a function area_triangle that calculates the area of a triangle.
+##- a data package, containing a triangles module that declares a variable triangle_definitions with a list of 10 triangle definitions. 
+## Each triangle definition should be a dictionary like:{"base": 10, "height":2}
+##- a main.py file that will use utils.functions.area_triangle and data.triangles.triangle_definitions to print the areas of all triangles.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
